@@ -2,20 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Random Chance</title>
     <script type="text/javascript">
-    function playLotto(quarter){
-      while(quarter > 0){
-        var win = Math.floor(Math.random()*100);
-        if(win == 1){
-          var amountWon = Math.floor(Math.random()*50+50);
-          
-          return amountWon + quarter;
-
+    function playLotto(play){
+      while (play > 0){
+        let winChance = Math.floor(Math.random()*100);
+        let playWin = Math.floor(Math.random()*50+51);
+        if (winChance === 1 && play > 0){
+          console.log("You win "+playWin+"quarters!")
+          return playWin + play;
+          }
+        else {
+          play = play -1;
+          console.log("you have " + play + "left")
         }
-    }
-    return(0)
-  }
+        }
+        return 0;
+      }
 
     </script>
   </head>
