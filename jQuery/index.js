@@ -12,13 +12,12 @@
 
       });
     });
-      $('figure').click(function(){
-        if ($('figure').("slideUp")){
-          console.log(event);
-          $('figure').slideDown('slow');
-        } else{
-        $('figure').slideUp();
-            }
+    $('figure').click(function(){
+          $('figure').slideUp('slow', function() {
+            setTimeout(function() {
+              $('figure').slideDown('slow');
+            }, 1000);
+          });
         });
 
 

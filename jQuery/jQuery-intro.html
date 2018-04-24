@@ -5,36 +5,7 @@
     <title>jQyert demo!</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('#fadeOut').click(function(){
-          $('header h1').fadeOut('slow', function(){
-
-          });
-        });
-
-        $('#fadeIn').click(function(){
-          $('header h1').fadeIn('slow', function(){
-
-          });
-        });
-          $('figure').click(function(){
-            if ($('figure').is("slideUp")){
-              console.log(event);
-              $('figure').slideDown('slow');
-            } else{
-            $('figure').slideUp();
-                }
-            });
-
-
-          });
-
-
-
-
-
-    </script>
+    <script src="index.js"></script>
 
   </head>
   <body>
@@ -49,6 +20,8 @@
           <figcaption>Heisencat is my Superhero</figcaption>
         </figure>
       </header>
+
+
 
     </div>
   </body>
