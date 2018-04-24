@@ -1,7 +1,33 @@
 #wrapper{
-  background: black;
+  background-color: indianred;
   color: white;
-  height: 970px;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: auto;
+  animation-play-state: running;
+  text-align: center;
+}
+
+nav a{
+  color: lightblue;
+  font-weight: bolder;
 
 }
-header{
+
+nav li{
+  display: inline-block;
+}
+
+figure img{
+  width: 350px;
+  display: inline-grid;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px;
+  font-size: 1em;
+  color: white;
+  background: darkred;
+}
