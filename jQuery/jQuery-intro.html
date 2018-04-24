@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jQyert demo!</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#fadeOut').click(function(){
+          $('header h1').fadeOut('slow', function(){
+
+          });
+        });
+
+        $('#fadeIn').click(function(){
+          $('header h1').fadeIn('slow', function(){
+
+          });
+        });
+          $('figure').click(function(){
+            if ($('figure').is("slideUp")){
+              console.log(event);
+              $('figure').slideDown('slow');
+            } else{
+            $('figure').slideUp();
+                }
+            });
+
+
+          });
+
+
+
+
+
+    </script>
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>This is my Jquery Laboratory!</h1>
+        <button id="fadeOut">Hide h1</button>
+        <button id="fadeIn">Show h1</button>
+
+        <figure>
+          <img src="images/heisencat.png" alt="logo" width="400px">
+          <figcaption>Heisencat is my Superhero</figcaption>
+        </figure>
+      </header>
+
+    </div>
+  </body>
+</html>
